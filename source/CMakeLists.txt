@@ -1,0 +1,1 @@
+add_executable(spark spark.cpp)
