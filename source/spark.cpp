@@ -1,8 +1,17 @@
-#include "spark.hpp"
+#include <windows.h>    // include the basic windows header file
 
-int main()
+// the entry point for any Windows program
+int WINAPI WinMain(HINSTANCE hInstance,
+                   HINSTANCE hPrevInstance,
+                   LPSTR lpCmdLine,
+                   int nShowCmd)
 {
-    std::cout << "Spark Engine" << std::endl;
+    // create a "Hello World" message box using MessageBox()
+    MessageBox(NULL,
+               "Hello World!",
+               "Just another Hello World program!",
+               MB_ICONEXCLAMATION | MB_OK);
 
+    // return 0 to Windows
     return 0;
 }
