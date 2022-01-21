@@ -1,1 +1,1 @@
-add_executable(spark spark.cpp)
+add_executable(spark "platform/Testing/Testing.cpp")
