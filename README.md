@@ -1,6 +1,6 @@
 # Spark
 
-hobby game engine
+hobby game engine.
 
 # build guide
 
