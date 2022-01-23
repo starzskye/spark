@@ -1,5 +1,0 @@
-C:/Users/user/projects/spark/build/default/CMakeFiles/edit_cache.dir
-C:/Users/user/projects/spark/build/default/CMakeFiles/rebuild_cache.dir
-C:/Users/user/projects/spark/build/default/source/CMakeFiles/spark.dir
-C:/Users/user/projects/spark/build/default/source/CMakeFiles/edit_cache.dir
-C:/Users/user/projects/spark/build/default/source/CMakeFiles/rebuild_cache.dir
