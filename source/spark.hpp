@@ -1,1 +1,2 @@
-#include <iostream>
+export module spark;
+import <iostream>;
