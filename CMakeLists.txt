@@ -1,5 +1,5 @@
-#Global settings
-#keep it reasonably simple
+# Global settings
+# keep it reasonably simple
 
 cmake_minimum_required (VERSION 3.10)
 
