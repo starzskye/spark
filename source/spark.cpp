@@ -9,6 +9,6 @@ int main()
     #endif
 
     #ifdef LINUX
-        spark::print("This is windows");
+        spark::print("This is linux");
     #endif
 }
