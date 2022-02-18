@@ -1,14 +1,14 @@
-import <iostream>;
+#include "spark.hpp"
 
 #define LINUX
 
 int main()
 {
     #ifdef WIN
-        std::cout << "This is windows" << std::endl;
+        spark::print("This is windows");
     #endif
 
     #ifdef LINUX
-        std::cout << "This is linux" << std::endl;
+        spark::print("This is windows");
     #endif
 }
