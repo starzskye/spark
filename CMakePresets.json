@@ -7,64 +7,18 @@
   },
   "configurePresets": [
     {
-      "name": "default",
-      "displayName": "Default Config",
+      "name": "default-linux",
+      "displayName": "gcc_linux_x64_release",
       "description": "Default build using Ninja generator",
       "generator": "Ninja",
-      "binaryDir": "${sourceDir}/build/default",
-      "cacheVariables": {
-        "FIRST_CACHE_VARIABLE": {
-          "type": "BOOL",
-          "value": "OFF"
-        },
-        "SECOND_CACHE_VARIABLE": "ON"
-      },
-      "environment": {
-        "MY_ENVIRONMENT_VARIABLE": "Test",
-        "PATH": "$env{HOME}/ninja/bin:$penv{PATH}"
-      },
-      "vendor": {
-        "example.com/ExampleIDE/1.0": {
-          "autoFormat": true
-        }
-      }
+      "binaryDir": "${sourceDir}/binary/linux/x64/release"
     },
     {
-      "name": "ninja-multi",
-      "inherits": "default",
-      "displayName": "Ninja Multi-Config",
-      "description": "Default build using Ninja Multi-Config generator",
-      "generator": "Ninja Multi-Config"
-    },
-    {
-      "name": "windows-only",
-      "inherits": "default",
-      "displayName": "Windows-only configuration",
-      "description": "This build is only available on Windows",
-      "condition": {
-        "type": "equals",
-        "lhs": "${hostSystemName}",
-        "rhs": "Windows"
-      }
+      "name": "default-windows",
+      "displayName": "gcc_windows_x64_release",
+      "description": "Default build using Ninja generator",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/binary/windows/x64/release"
     }
-  ],
-  "buildPresets": [
-    {
-      "name": "default",
-      "configurePreset": "default"
-    }
-  ],
-  "testPresets": [
-    {
-      "name": "default",
-      "configurePreset": "default",
-      "output": {"outputOnFailure": true},
-      "execution": {"noTestsAction": "error", "stopOnFailure": true}
-    }
-  ],
-  "vendor": {
-    "example.com/ExampleIDE/1.0": {
-      "autoFormat": false
-    }
-  }
+  ]
 }
